@@ -1,69 +1,96 @@
 <!DOCTYPE html>
 <!--This is the head of our html content that will not be showed on the page, extrenal resources and meta data-->
 <head>
-<title>Peakaboo</title>
+<title>the-sleep-co</title>
 </head>
 
+<!-- font-awesome icons-  (from this website: https://cdnjs.com/libraries/font-awesome)-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 <!--grid stylesheet-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/gridlex/2.6.0/gridlex.min.css">
 
 <!--google fonts-->
 
 <!-- CSS stylesheet (always comes last)-->
-    <link rel="stylesheet" href="style.css"-->
+    <link rel="stylesheet" href="style.css">
 
  <!--This is the body- page content-->
 <body>
- <section class="grid">
-<!--banner 1-->
-    <div class="col-12 bg-image1">
-        <h1>sleep like a baby</h1>
-        <h2>the ultimate mattress solution</h2>
-    </div>
 
-    <!--banner 2-->
-    <div class="col-6">
+<!--------------------------header- banner 1-->
+   <header class="bg-image1 padded grid">
+      <div class="col-12">
+        <h2>sleep like a baby</h2>
+        <h1>the ultimate mattress solution</h1>
+    </div>
+  </header>
+
+ <!--------------------------banner 2-->
+<section class="grid">
+    <div class="col-6 padded">
     <h3>built to last a lifetime</h3>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laboriosam esse expedita ipsam debitis, perspiciatis mollitia! Adipisci, incidunt amet molestiae esse commodi nulla. Non, voluptate commodi quos cum dolore ad?</p>
     </div>
-    <div class="col-6 bg-image2"</div>
+    <div class="col-6 bg-image2"></div>
+</section>
 
-    <!--banner 3-->
+<!----------------------------banner 3-->
+<section class="grid">
         <div class="col-6 bg-image3"> </div>
-        <div class="col-6">
+        <div class="col-6 padded">
             <h3>so soft you'll melt </h3>
+            <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugiat consequuntur deleniti porro sit minima pariatur inventore est incidunt quam sapiente nihil perspiciatis sequi harum eum odio, modi debitis quas. At!</p>
         </div>
+</section>
 
-        <!--banner 4-->
-    <div class="col-12">
+ <!------------------------------feature icon grid-->
+<section class="grid padded bg-dark">
+    <div class="col-12 padded-sm">
         <h3>features you will love</h3>
     </div>
-    <div class="col-3">
+    <div class="col-3 padded-sm">
+        <i class="fa-solid fa-cloud"></i>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
     </div>
-    <div class="col-3">
+    <div class="col-3 padded-sm">
+        <i class="fa-solid fa-cloud"></i>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
     </div>
-    <div class="col-3">
+    <div class="col-3 padded-sm">
+        <i class="fa-solid fa-cloud"></i>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
     </div>
-    <div class="col-3">
+    <div class="col-3 padded-sm">
+        <i class="fa-solid fa-cloud"></i>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
     </div>
+</section>  
 
-<!--banner 5-->
-    <div class="col-12"
-        <h4>never underestimate the power of</h4>
-        <h5>a good night sleep</h5>
+<!--------------------------------image banner -->
+<section class="grid padded">  
+     <div class="col-12"
+        <h5>never underestimate the power of a good night sleep</h5>
     </div>    
+</section>
 
-<!--banner 6-->
-    <div class="col-12">
+<!--------------------------------banner 6-->
+<section class="grid padded">
+    <div class="col-1">
+        <span> "</span> 
+    </div>
+    <div class="col-10">
         <h4>I've never experienced sleep like this. Omg I really los <br> this mattress I want to buy one for every member of my</h4>
             <h6>- A very happy costumer</h6>
     </div>
+    <div class="col-1">
+        <span>"</span>
+    </div>
+</section>
 
-<!--footer-->
-    <div class="col-6">
+<!-------------------------------footer-->
+<footer class="grid-spaceBetween padded bg-dark">
+    <div class="col-4">
         <h5>let's connect</h5>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, quibusdam natus numquam recusandae corporis dolores cumque, fugiat, odit culpa modi adipisci esse! Fugit, autem saepe modi molestias nisi nam repellendus?</p>
     </div>
@@ -74,6 +101,6 @@
         <p>Instagram: @thesleepco</p>
     </div>
 
-</section>
+</footer>
 </body>
 </html>
