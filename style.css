@@ -140,15 +140,9 @@ a {
 a:hover{
     color:#FFBE00;
 }
-}
+
 /* Header & Footer styles*/
 
-header{
-    background-image: url('/images/the-sleep-co-bed.jpg');
-    background-size:cover;
-    background-position:center;
-}
- 
 header h3{ 
     font-size:5.5rem;
     line-height:1;
@@ -189,6 +183,11 @@ footer a{
 
 /*image styles*/
   
+.bg-image{
+    background-image:url('/images/the-sleep-co-bed.jpg');
+    background-position:50% 0%;
+    background-size: cover;
+}
 .bg-image2 {
     background-image:url('/images/the-sleep-co-lamp.jpg');
     background-size:cover;
