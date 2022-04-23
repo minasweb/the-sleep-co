@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+<html>
 <!--This is the head of our html content that will not be showed on the page, extrenal resources and meta data-->
 <head>
-<title>the-sleep-co</title>
-</head>
+<title>Sleep like a baby</title>
+
 
 <!-- font-awesome icons-  (from this website: https://cdnjs.com/libraries/font-awesome)-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,11 +21,24 @@
 <!-- CSS stylesheet- our custom styleshee (always comes last)-->
     <link rel="stylesheet" href="style.css" />
 
- <!--This is the body- page content-->
+</head>
+
+<!--This is the body- page content-->
 <body>
 
-<!--------------------------header-banner 1---------------->
-   <header class="grid text-center tall-100 padded bg-image">
+  
+<!----------------Header---------------------->
+<header class="grid-spaceBetween bg-dark padded-t-1 padded-r-1">
+<h1 class="col-4 text-middle">The Sleep Co</h1>
+    <nav class="col-7-middle text-right">
+        <a href="index.html" class="a-header"> Home </a> 
+        <a href="about.html" class="a-header"> About </a> 
+        <a href="contact.html" class="a-header"> Contact </a>
+    </nav>
+</header>
+
+<!---------------------------banner 1---------------->
+   <section class="grid text-center tall-100 padded bg-image">
       <div class="col-12">
         <h3 class="font-weight-extra-bold editable">
             <span class="colorful-text">sleep</span> like a puppy
@@ -33,7 +47,7 @@
             the ultimate mattress solution
         </h1>
     </div>
-  </header>
+</section>
 
  <!--------------------------Gallery------------------------>
 <section class="grid">
@@ -117,3 +131,4 @@
 
 </footer>
 </body>
+</html>
