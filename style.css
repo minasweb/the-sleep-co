@@ -104,25 +104,28 @@ body{
     color: #192B37;
 }
 
-
-
 header{
-    padding:1% 5%;
+    background-image:url('/images/the-sleep-co-bed.jpg');
+    background-size: cover;
+    background-position:50% 50%;
+    padding:2% 5%;
 }
 
-.a-header{
-    padding: 1rem 2rem;
-    border: 1px solid #192B37;
+nav a {
+    padding:0.5rem;
+    display:inline-block;
 }
-
 
 header a:hover{
     color: #FFBE00;
 }
+
+header h2 {
+    margin-bottom:0;
+}
 header h3{ 
     font-size:5.5rem;
     line-height:1;
-    padding-top: 23%;
 }
 
 h2, h3, h4, h5, h6 {
@@ -154,7 +157,7 @@ p {
 a {
     color:inherit;
     text-decoration:none;
-    border-bottom:1px solid;
+ 
 }
 
 
@@ -168,6 +171,11 @@ footer a{
     border:none;
 }
 
+.sub-footer{
+    display:block;
+    justify-content:center;
+
+}
 /* Typography classes-------------*/
 .colorful-text,
 .text-featured {color:#FFBE00}
@@ -200,20 +208,13 @@ footer a{
     color:rgb(120,120,125);
 }
 
+.uppercase {text-transform:uppercase;}
 
-
-/* buttons and forms*/
-
-input,
-textarea{
-    width:100%;
-    display:block;
-}
 /*image styles*/
   
 .bg-image{
     background-image:url('/images/the-sleep-co-bed.jpg');
-    background-position:50% 0%;
+    background-position:50% 50%;
     background-size: cover;
     background-repeat:no-repeat;
 }
@@ -238,7 +239,39 @@ textarea{
 }
 
 
-/* icon grid*/
+
+/* buttons and forms*/
+
+input,
+textarea{
+    width:100%;
+    display:block;
+    margin-bottom: 0.3rem;
+    padding: 0.5rem;
+    font-family:inherit;
+    font-size:0.9rem;
+    border: 2px solid transparent;
+    border-radius: 0.3rem;
+}
+
+input:focus,
+textarea:focus{
+    border:2px solid #FFBE00;
+    outline:none;
+}
+
+.button{
+    padding: 0.5rem 2rem;
+    appearance: none;
+    color:white;
+    border-radius: 0.3rem;
+}
+
+.button-yellow{
+    border:1px solid #FFBE00;
+    background-color:#FFBE00;
+    justify-content:center;
+}
 
 .fas {
     font-size: 3rem;
