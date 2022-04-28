@@ -83,10 +83,13 @@ body{
     color: #192B37;
 }
 
+.bg-yellow{background-color:#FFBE00;}
+.bg-light{background-color: #E3ECF2;}
 .bg-dark { 
     background-color:  #192B37;
     color:          white;
 }
+
 
 .tall-50{   min-height:    50vh;}
 .tall-60{   min-height:    60vh;}
@@ -123,8 +126,6 @@ h2, h3, h4, h5, h6 {
   
 h2{
     font-size:2.5rem;
-    line-height:1.1;
-    margin-bottom:1rem;
 }
 
 
@@ -149,15 +150,17 @@ header{
     border:1px solid red;
 }*/
 
+
 .a-header{
     padding: 1rem 2rem;
     border: 1px solid #192B37;
 }
 
+
 header a:hover{
-    border:1px solid #FFBE00;
+    color: #FFBE00;
 }
-section h3{ 
+header h3{ 
     font-size:5.5rem;
     line-height:1;
     padding-top: 23%;
@@ -166,8 +169,9 @@ section h3{
 footer a{
     border:none;
 }
-.colorful-text{color:#FFBE00}
-.white-text{color:white;}
+.colorful-text,
+.text-featured {color:#FFBE00}
+.text-white{color:white;}
 
 .small-text{font-size:1.5rem;}
 .medium-text{
@@ -203,6 +207,11 @@ footer a{
     background-position:50% 0%;
     background-size: cover;
 }
+
+.landscape{ padding-bottom:65%;}
+.portrait{ padding-bottom:125%;}
+.square{ padding-bottom:100%;}
+
 .bg-image2 {
     background-image:url('/images/the-sleep-co-lamp.jpg');
     background-size:cover;
