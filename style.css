@@ -76,7 +76,7 @@
 .bg-image {
     background-image: url('images/the-sleep-co-bed.jpg');
     background-size: cover;
-    min-height:10rem; 
+   /* min-height:10rem; */
 }
 
 .bg-yellow{background-color:#FFBE00;}
@@ -120,9 +120,9 @@ header a:hover{
     color: #FFBE00;
 }
 
-header h2 {
-    margin-bottom:0;
-}
+
+header h2 {margin-bottom:0;}
+
 header h3{ 
     font-size:5.5rem;
     line-height:1;
@@ -157,7 +157,6 @@ p {
 a {
     color:inherit;
     text-decoration:none;
- 
 }
 
 
@@ -174,8 +173,8 @@ footer a{
 .sub-footer{
     display:block;
     justify-content:center;
-
 }
+
 /* Typography classes-------------*/
 .colorful-text,
 .text-featured {color:#FFBE00}
@@ -305,14 +304,25 @@ textarea:focus{
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 64em) {
+
+/* Temporary visual hint for responsive editing, delete later */
+body { border: 2px solid green;
+        padding:0.5rem;}
+
   .show-md { display: block; }
   .hide-md { display: none;  }
+
+  .md-tall-80 {min-height:80vh;}
 }
 
 /* ------- SM Media Query (48em / 768px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
 
 @media (max-width: 48em) {
+
+    /* Temporary visual hint for responsive editing, delete later */
+    body {border: 2px solid blue;}
+
   .show-sm           { display: block; }
   .hide-sm           { display: none;  }
 	 
@@ -333,14 +343,29 @@ textarea:focus{
   .sm-margin-b-0     { margin-bottom: 0; }
   .sm-margin-l-0     { margin-left: 0; }
   .sm-margin-r-0     { margin-right: 0; }
+
+  .sm-padded-t-1     {padding-top:1rem;}
+
+  .logo h2           {font-size:2rem;}
+  header h3          {font-size:11vw;}
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
 /* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
 
 @media (max-width: 36em) {
+
+    /* Temporary visual hint for responsive editing, delete later */
+    body {border: 2px solid lightblue;}
+
   .show-xs { display: block; }
   .hide-xs { display: none;  }
+
+    h1{
+      font-size:1.4rem;
+      line-height:1.1;
+  }
+  
 }
 
 /* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
@@ -353,35 +378,3 @@ textarea:focus{
     }
 }
 
-/* ------- MD Media Query (64em / 1024px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
-
-@media (max-width: 64em) {
-    /* Temporary visual hint for responsive editing, delete later */
-    body {
-        border: 2px solid green;
-    }
-	...
-}
-
-/* ------- SM Media Query (48em / 768px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 768px, or zoomed in equivalent */ 
-
-@media (max-width: 48em) {
-    /* Temporary visual hint for responsive editing, delete later */
-    body {
-        border: 2px solid blue;
-    }
-    ...
-}
-
-/* ------- XS Media Query (36em / 576px) --------------- */ 
-/* - Styles added here will apply at devices smaller than 576px, or zoomed in equivalent */ 
-
-@media (max-width: 36em) {
-    /* Temporary visual hint for responsive editing, delete later */
-    body {
-        border: 2px solid lightblue;
-    }
-    ...
-}
