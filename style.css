@@ -280,6 +280,11 @@ textarea:focus{
     margin-bottom: 2rem;
 }
 
+.fa-brands{
+    font-size:2rem;
+    padding-right:0.5rem;
+}
+
 .quote-icon{
     font-size:6rem;
     display:inline-block;
