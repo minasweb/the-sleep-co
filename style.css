@@ -175,6 +175,9 @@ footer a{
     justify-content:center;
 }
 
+footer nav a{
+    padding-left:0;
+}
 /* Typography classes-------------*/
 .colorful-text,
 .text-featured {color:#FFBE00}
@@ -283,7 +286,7 @@ textarea:focus{
 
 .fa-brands{
     font-size:2rem;
-    padding-right:0.5rem;
+    padding: 0.5rem 0.5rem 0.5rem 0;
 }
 
 .quote-icon{
