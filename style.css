@@ -272,6 +272,8 @@ textarea:focus{
     justify-content:center;
 }
 
+.w-100{width:100%}
+
 .fas {
     font-size: 3rem;
     display: block;
@@ -294,9 +296,9 @@ textarea:focus{
 
 /* General CSS Responsive Styles (Apply everywhere unless overridden) */ 
 
-.show-xs, 
-.show-sm,
-.show-md {
+.xs-show, 
+.sm-show,
+.md-show {
 	display: none;
 }
 
@@ -309,8 +311,8 @@ textarea:focus{
 body { border: 2px solid green;
         padding:0.5rem;}
 
-  .show-md { display: block; }
-  .hide-md { display: none;  }
+  .md-show { display: block; }
+  .md-hide { display: none;  }
 
   .md-tall-80 {min-height:80vh;}
 }
@@ -320,11 +322,15 @@ body { border: 2px solid green;
 
 @media (max-width: 48em) {
 
+    html{font-size:14px;}
+    p{font-size:1.1rem;}
+
     /* Temporary visual hint for responsive editing, delete later */
     body {border: 2px solid blue;}
 
-  .show-sm           { display: block; }
-  .hide-sm           { display: none;  }
+
+  .sm-show           { display: block; }
+  .sm-hide           { display: none;  }
 	 
   .sm-text-center    { text-align: center; }
   .sm-text-left      { text-align: left; }
@@ -333,6 +339,7 @@ body { border: 2px solid green;
   .sm-padded         { padding: 5%; }
   .sm-padded-1       { padding: 1rem; }
   .sm-padded-05      { padding: 0.5rem; }
+  .sm-padded-0       { padding:0;}
 
   .sm-padded-t-0     { padding-top: 0; }
   .sm-padded-b-0     { padding-bottom: 0; }
@@ -345,9 +352,14 @@ body { border: 2px solid green;
   .sm-margin-r-0     { margin-right: 0; }
 
   .sm-padded-t-1     {padding-top:1rem;}
+  .sm-padded-t-2     {padding-top:2rem;}
 
   .logo h2           {font-size:2rem;}
   header h3          {font-size:11vw;}
+
+
+  .sm-color-featured { color:#192B37;}
+
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -358,13 +370,23 @@ body { border: 2px solid green;
     /* Temporary visual hint for responsive editing, delete later */
     body {border: 2px solid lightblue;}
 
-  .show-xs { display: block; }
-  .hide-xs { display: none;  }
+  .xs-show { display: block; }
+  .xs-hide { display: none;  }
+
+  .xs-padded-r-0{padding-right:0;}
 
     h1{
       font-size:1.4rem;
       line-height:1.1;
   }
+
+  h2{font-size:2rem; }
+
+  .big-text  {font-size:3.5rem;}
+
+  [class*="grid-"][class*="-right"] {
+    justify-content: left;
+    padding-top:2rem;
   
 }
 
@@ -372,9 +394,15 @@ body { border: 2px solid green;
 /* - Styles added here will apply at devices smaller than 400px, or zoomed in equivalent */ 
 
 @media (max-width: 25em) {
+
+    html{ font-size:12px;}
+
     [class*=grid] .xxs-stack {
         flex-basis: 100%;
         max-width: 100%;
     }
+
+    .xxs-tall-60{min-height:60vh;}
+    .xs-padded-r-0{padding-right:5%;}
 }
 
