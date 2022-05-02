@@ -360,6 +360,9 @@ body { border: 2px solid green;
 
   .sm-color-featured { color:#192B37;}
 
+  
+
+  
 }
 
 /* ------- XS Media Query (36em / 576px) --------------- */ 
@@ -374,6 +377,7 @@ body { border: 2px solid green;
   .xs-hide { display: none;  }
 
   .xs-padded-r-0{padding-right:0;}
+  .padded-l {padding:0.5rem;}
 
     h1{
       font-size:1.4rem;
@@ -386,7 +390,10 @@ body { border: 2px solid green;
 
   [class*="grid-"][class*="-right"] {
     justify-content: left;
-    padding-top:2rem;
+    padding-top:2rem;}
+
+    .xs-flex-flip { flex-direction: column-reverse; }
+  
   
 }
 
@@ -404,5 +411,6 @@ body { border: 2px solid green;
 
     .xxs-tall-60{min-height:60vh;}
     .xs-padded-r-0{padding-right:5%;}
+    .xs-padded-b-2{padding-bottom: 2rem;}
 }
 
