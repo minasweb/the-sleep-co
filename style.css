@@ -308,8 +308,8 @@ textarea:focus{
 @media (max-width: 64em) {
 
 /* Temporary visual hint for responsive editing, delete later */
-body { border: 2px solid green;
-        padding:0.5rem;}
+/*body { border: 2px solid green;
+        padding:0.5rem;}*/
 
   .md-show { display: block; }
   .md-hide { display: none;  }
@@ -326,7 +326,7 @@ body { border: 2px solid green;
     p{font-size:1.1rem;}
 
     /* Temporary visual hint for responsive editing, delete later */
-    body {border: 2px solid blue;}
+    /*body {border: 2px solid blue;}*/
 
 
   .sm-show           { display: block; }
@@ -336,10 +336,11 @@ body { border: 2px solid green;
   .sm-text-left      { text-align: left; }
   .sm-text-right     { text-align: right; }
 
-  .sm-padded         { padding: 5%; }
-  .sm-padded-1       { padding: 1rem; }
-  .sm-padded-05      { padding: 0.5rem; }
+  /*.sm-padded       { padding: 5%; }   because there already is padded-sm=2.5%*/
   .sm-padded-0       { padding:0;}
+  .sm-padded-05      { padding: 0.5rem; }
+  .sm-padded-1       { padding: 1rem; }
+  .sm-padded-2       { padding: 2rem; }
 
   .sm-padded-t-0     { padding-top: 0; }
   .sm-padded-b-0     { padding-bottom: 0; }
@@ -353,6 +354,7 @@ body { border: 2px solid green;
 
   .sm-padded-t-1     {padding-top:1rem;}
   .sm-padded-t-2     {padding-top:2rem;}
+  .sm-padded-l-r {padding-left:5%; padding-right: 5%;}
 
   .logo h2           {font-size:2rem;}
   header h3          {font-size:11vw;}
@@ -371,12 +373,13 @@ body { border: 2px solid green;
 @media (max-width: 36em) {
 
     /* Temporary visual hint for responsive editing, delete later */
-    body {border: 2px solid lightblue;}
+    /*body {border: 2px solid lightblue;}*/
 
   .xs-show { display: block; }
   .xs-hide { display: none;  }
 
   .xs-padded-r-0{padding-right:0;}
+  .xs-padded-2       {padding:2rem;}
   .padded-l {padding:0.5rem;}
 
     h1{
@@ -394,7 +397,6 @@ body { border: 2px solid green;
 
     .xs-flex-flip { flex-direction: column-reverse; }
     .xs-tall-60{min-height:60vh;}
-   
 }
 
 /* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
@@ -409,9 +411,11 @@ body { border: 2px solid green;
         max-width: 100%;
     }
 
+    .xxs-tall-50 {min-height:50vh;}
     .xxs-tall-60{min-height:60vh;}
     .xs-padded-r-0{padding-right:5%;}
     .xs-padded-b-2{padding-bottom: 2rem;}
+
 }
 
 /*problems:
