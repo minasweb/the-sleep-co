@@ -393,8 +393,8 @@ body { border: 2px solid green;
     padding-top:2rem;}
 
     .xs-flex-flip { flex-direction: column-reverse; }
-  
-  
+    .xs-tall-60{min-height:60vh;}
+   
 }
 
 /* ------- Optional XXS Media Query (25em / 400px) NOT part of default Gridlex styling--------------- */ 
@@ -414,3 +414,7 @@ body { border: 2px solid green;
     .xs-padded-b-2{padding-bottom: 2rem;}
 }
 
+/*problems:
+
+xs.flex-flip doesn't work on products page.
+*/
