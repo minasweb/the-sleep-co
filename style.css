@@ -224,11 +224,21 @@ footer nav a{
     background-position:50% 50%;
     background-size: cover;
     background-repeat:no-repeat;
+    background-color: rgb(240,240,240);
 }
+/* Aspect Ratio  */
+.portrait-tall { padding-bottom: 175%; }
+.portrait { padding-bottom: 125%; }
+.square { padding-bottom: 100%; }
+.landscape { padding-bottom: 66%; }
+.landscape-wide { padding-bottom: 56%; }
 
-.landscape{ padding-bottom:65%;}
-.portrait{ padding-bottom:125%;}
-.square{ padding-bottom:100%;}
+
+/* Background Position */
+.bg-pos-t { background-position: top; }
+.bg-pos-b { background-position: bottom; }
+.bg-pos-l { background-position: left; }
+.bg-pos-r { background-position: right; }
 
 .bg-image2 {
     background-image:url('/images/the-sleep-co-lamp.jpg');
@@ -245,6 +255,12 @@ footer nav a{
     background-position: 50% 56%;
 }
 
+
+/*Image Gallery*/
+.gallery [class*="col-"] {
+    padding: 0.5%;
+  }
+  
 
 
 /* buttons and forms*/
