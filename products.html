@@ -1,7 +1,17 @@
 ---
 layout: default
 title: Products Page
----
+cards:
+- heading: so
+  description: Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+  featured_image: /images/the-sleep-co-bed.jpg
+- heading: so
+  description: Quo odio consectetur officiis labore, perspiciatis alias reprehenderit ut?
+  featured_image: /images/the-sleep-co-pug.jpg
+- heading: soft
+  description: Minus dolor nostrum veritatis ratione mollitia? A magni accusantium, sunt harum quasi dolorem.
+  featured_image: /images/the-sleep-co-pillow.jpg
+--- 
 
 
  <!----------------Header---------------------->
@@ -45,33 +55,18 @@ title: Products Page
 
 <!-----------Card section---------------->
 <section class="grid-spaceAround padded-md">
+    
+    {% for item in page.cards %}
     <div class="col-4_xs-10 padded-sm">
         <div class="card">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor nostrum veritatis ratione mollitia? A magni accusantium, sunt harum quasi dolorem, quo odio consectetur officiis labore, perspiciatis alias reprehenderit ut?</p>
+            <div class=" bg-image portrait" style="background-image: url('{{item.featured_image}}')"></div>
+            <div class="padded-1 text-center">
+                <h3>{{item.heading}}</h3>
+                <p>{{item.description}}</p>
             </div>
         </div>
     </div>
-    <div class="col-4_xs-10 padded-sm">
-        <div class="card">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor nostrum veritatis ratione mollitia? A magni accusantium, sunt harum quasi dolorem, quo odio consectetur officiis labore, perspiciatis alias reprehenderit ut?</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-4_xs-10 padded-sm">
-        <div class="card">
-            <div class="bg-image portrait"></div>
-            <div class="padded-1">
-                <h3>little heading</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus dolor nostrum veritatis ratione mollitia? A magni accusantium, sunt harum quasi dolorem, quo odio consectetur officiis labore, perspiciatis alias reprehenderit ut?</p>
-            </div>
-        </div>
-    </div>
+{% endfor %}
 </section>
 
 
