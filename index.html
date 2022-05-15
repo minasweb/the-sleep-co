@@ -1,10 +1,20 @@
 ---
 layout: default
 title: Home Page
+features:
+ - icon: fas fa-solid fa-cloud
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!
+ - icon:  fas fa-solid fa-feather-pointed
+   description: Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis.
+ - icon: fas fa-solid fa-seedling
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+ - icon: fas fa-solid fa-wind
+   description: Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+
 ---
   
 <!----------------Header---------------------->
-<header class="grid  tall-100 md-tall-80">
+<header class="grid tall-100 md-tall-80">
     
     {% include header-nav.html %}
 
@@ -43,26 +53,17 @@ title: Home Page
 </section>
 
  <!------------------------------feature icon grid--------------------->
-<section class="grid padded bg-dark">
+<section class="grid-center padded bg-dark">
     <div class="col-12 padded-sm editable">
         <h2 class="text-center"><span class="colorful-text">features</span> you will love</h2>
     </div>
+
+    {% for item in page.features %}
     <div class="col-3_sm-6 xxs-stack padded-sm editable">
-        <i class="fas fa-solid fa-cloud"></i>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
+        <i class="{{item.icon}}"></i>
+        <p>{{item.description}}</p>
     </div>
-    <div class="col-3_sm-6 xxs-stack padded-sm editable">
-        <i class="fas fa-solid fa-cloud"></i>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
-    </div>
-    <div class="col-3_sm-6 xxs-stack padded-sm">
-        <i class="fas fa-solid fa-cloud"></i>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
-    </div>
-    <div class="col-3_sm-6 xxs-stack padded-sm">
-        <i class="fas fa-solid fa-cloud"></i>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores natus fugit voluptatum quis, quibusdam quidem? Sed doloribus earum distinctio aperiam, quaerat dicta voluptatibus error consectetur ex veritatis, nihil, vero provident!</p>
-    </div>
+   {% endfor %}
 </section>  
 
 <!--------------------------------image banner -------------------------->
