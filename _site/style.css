@@ -261,8 +261,23 @@ footer nav a{
     padding: 0.5%;
   }
   
+.gallery .gallery-item{
+    border-bottom:none;
+}
 
+/* Background of gallery when active*/
+.lg-backdrop{
+    color:#192B37;
+}
 
+.lg-backdrop.in{
+    opacity:0.8;
+}
+
+.lg-sub-html{
+    background-color:#192B37;
+    color:white;
+}
 /* buttons and forms*/
 
 input,
@@ -296,6 +311,20 @@ textarea:focus{
     justify-content:center;
 }
 
+/*Button for gallery*/
+.button-2{
+    border:1px solid #192B37;
+    background-color:#FFBE00;
+    justify-content:center;
+    border-radius: 0.3rem;
+    color:white;
+    padding: 0.5rem 1rem;
+    font-size: 1.4rem;
+}
+
+.button-2:hover{
+    color:#192B37;
+}
 .w-100{width:100%}
 
 .fas,
